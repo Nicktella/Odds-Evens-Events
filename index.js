@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         oddCategory: [],
         evenCategory: [],
     };
-
+ //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     const form = document.querySelector("form"); //targeting 'form'
     const numberInput = form.querySelector('input[name="number"]'); //targeting the form's input defined with [name="number"]
     const numberBankOutput = document.querySelector("#numberBank output"); //target the number bank's output
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sortAllButton.addEventListener("click", sortAll); // Acessing our "sortAllButton" function and listening for our on "click", and putting in the arguement the ID "sortOne"
 
    
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 If the entered value is a valid number or can be converted to a number, the condition evaluates to true, and the code block inside the curly braces is executed.
@@ -68,7 +69,8 @@ const firstNumber = state.numberBank.shift();: This line removes and returns the
 
 The shift() method modifies the original array by removing the first element and returns that removed element.
 
-if (firstNumber % 2 === 0) { state.evenCategory.push(firstNumber); } else { state.oddCategory.push(firstNumber); }: This conditional statement checks whether the firstNumber is even or odd.
+if (firstNumber % 2 === 0) { state.evenCategory.push(firstNumber); } else { state.oddCategory.push(firstNumber); }: 
+This conditional statement checks whether the firstNumber is even or odd.
 
 If firstNumber % 2 === 0 (i.e., the remainder when divided by 2 is 0), it means the number is even. 
 
@@ -93,13 +95,15 @@ render();: After sorting the number into either the evenCategory or oddCategory,
 
     /*
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-while (state.numberBank.length > 0): This is a while loop that continues as long as there are elements in the numberBank. It repeatedly executes the code block inside the loop until the condition (state.numberBank.length > 0) is no longer true.
+while (state.numberBank.length > 0): This is a while loop that continues as long as there are elements in the numberBank.
+ It repeatedly executes the code block inside the loop until the condition (state.numberBank.length > 0) is no longer true.
 
 const currentNumber = state.numberBank.shift();: Inside the loop, it takes the first number from the numberBank using the shift() method. 
 
 This removes the first element from the array and returns it.
 
-if (currentNumber % 2 === 0): It checks if the current number is even by using the modulo operator %. If the remainder when dividing currentNumber by 2 is 0, then the number is even.
+if (currentNumber % 2 === 0): It checks if the current number is even by using the modulo operator %. 
+If the remainder when dividing currentNumber by 2 is 0, then the number is even.
 
 If the number is even, it gets pushed into the state.evenCategory array.
 
@@ -128,11 +132,14 @@ In summary, the "sortAll" function empties the numberBank by moving all its elem
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     numberBankOutput.textContent: This line updates the content of the HTML element with the ID numberBank (presumably an output element) to display the current contents of the numberBank array. The content is formatted as a string using template literals, and the join(', ') method is used to concatenate the elements of the array with a comma and a space.
 
-    oddsOutput.textContent: This line updates the content of the HTML element with the ID odds (presumably an output element) to display the current contents of the oddCategory array. Similar to the previous line, it formats the content as a string using template literals and join(', ').
+    oddsOutput.textContent: This line updates the content of the HTML element with the ID odds (presumably an output element) to display the current contents of the oddCategory array. 
+    Similar to the previous line, it formats the content as a string using template literals and join(', ').
 
-    evensOutput.textContent: This line updates the content of the HTML element with the ID evens (presumably an output element) to display the current contents of the evenCategory array. Again, it formats the content as a string using template literals and join(', ').
+    evensOutput.textContent: This line updates the content of the HTML element with the ID evens (presumably an output element) to display the current contents of the evenCategory array. 
+    Again, it formats the content as a string using template literals and join(', ').
 
-    In summary, the render function ensures that the displayed content reflects the current state of the numberBank, oddCategory, and evenCategory arrays. It updates the HTML elements with the appropriate IDs to show the numbers in a formatted manner.
+    In summary, the render function ensures that the displayed content reflects the current state of the numberBank, oddCategory, and evenCategory arrays.
+    It updates the HTML elements with the appropriate IDs to show the numbers in a formatted manner.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     */
     
