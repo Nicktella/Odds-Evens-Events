@@ -130,7 +130,8 @@ In summary, the "sortAll" function empties the numberBank by moving all its elem
     }
     /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    numberBankOutput.textContent: This line updates the content of the HTML element with the ID numberBank (presumably an output element) to display the current contents of the numberBank array. The content is formatted as a string using template literals, and the join(', ') method is used to concatenate the elements of the array with a comma and a space.
+    numberBankOutput.textContent: This line updates the content of the HTML element with the ID numberBank (presumably an output element) to display the current contents of the numberBank array. 
+    The content is formatted as a string using template literals, and the join(', ') method is used to concatenate the elements of the array with a comma and a space.
 
     oddsOutput.textContent: This line updates the content of the HTML element with the ID odds (presumably an output element) to display the current contents of the oddCategory array. 
     Similar to the previous line, it formats the content as a string using template literals and join(', ').
